@@ -1,0 +1,64 @@
+body {
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.container {
+  background: white;
+  padding: 2rem;
+  padding-top: 3rem; /* 明示的に上だけ余白を大きめに取る */
+  border-radius: 10px;
+  max-width: 700px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  max-width: 700px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    flex-direction: column;
+
+}
+
+.explanation {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  transition: color 0.3s;
+}
+
+
+.seeing-you {
+  color: red;
+  font-weight: bold;
+}
+
+p {
+white-space: pre-wrap;
+}
+
+
+
+
+/* ヘッダーとフッター */
+header, footer {
+  background-color: #dee2e6;
+  padding: 15px;
+  text-align: center;
+  color: #2c2c2c;
+}
+.scary-eye {
+  width: 100%;        /* 横幅を親要素にフィットさせる */
+  height: auto;       /* 縦横比を保つ */
+  margin-top: 1rem;   /* 上に少し余白 */
+  max-width: 100%;    /* はみ出し防止（念のため） */
+  border-radius: 8px; /* オプション：角を少し丸める */
+}

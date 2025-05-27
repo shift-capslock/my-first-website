@@ -1,0 +1,122 @@
+/* ページ全体の見た目を設定 */
+body {
+  background-color: #f8f8ff; /* 背景のいろをうすい灰色にする */
+  color: #333; /* 文字のいろをこげ茶にする */
+  margin: 20px; /* 外がわのすきまをつける */
+  line-height: 1.6;
+}
+
+
+
+
+.highlight {
+  color: yellow;
+  font-weight: bold;
+}
+
+pre {
+  color: white;
+  white-space: pre-wrap;
+  font-family: monospace;
+  background-color: black; 
+}
+
+
+
+
+/* いちばん大きな見出しの見た目 */
+h1 {
+  font-size: 24px; /* テキストの大きさを指定する */
+  color: #2c3e50;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  text-align: left; /* テキストを左よせにする */
+}
+
+
+h2 {
+  font-size: 20px;
+  color: #34495e;
+  margin-top: 25px;
+  margin-bottom: 10px;
+}
+
+
+/* 段落の見た目 */
+p {
+  font-size: 16px;
+  background-color: #ffffff;
+  color: #000000;
+  margin: 10px 0;
+  padding: 10px;
+
+}
+
+#inyou{    border-left: 5px solid #6c757d;
+/* 左に色のついた線をつける（引用っぽく） */}
+
+
+/* リスト（ulとli）の見た目 */
+ul {
+  background-color: #f0f0f0;
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 6px;
+  text-align: left; /* テキストを左よせにする */
+}
+
+li {
+  margin-bottom: 8px;
+  font-size: 15px;
+}
+
+
+/* リンク（aタグ）の見た目 */
+a {
+  color: #007BFF;
+  text-decoration: none; /* 下線を消す */
+  margin-left: 5px;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* キーボードの画像 */
+.keyboard {
+  display: block;
+  margin: 10px auto;
+  max-width: 90%;
+  border: 1px solid #aaa;
+  padding: 4px;
+  background-color: #fff;
+}
+
+
+/* QRコード画像 */
+#QR {
+  display: block;
+  margin: 30px auto;
+  width: 200px;
+  border: 2px dashed #666;
+  background-color: #fff;
+}
+
+/* strongの見た目 */
+strong {
+  color: #d9534f;
+  font-weight: bold;
+}
+
+
+
+
+
+/* ヘッダーとフッター */
+header, footer {
+  background-color: #dee2e6;
+  padding: 15px;
+  text-align: center;
+  color: #2c2c2c;
+}
+

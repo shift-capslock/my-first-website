@@ -1,0 +1,40 @@
+
+body {
+    background-color: white;
+    margin: 0;
+    padding: 0;
+
+    display: flex; /* 横にならべる */
+    flex-wrap: wrap; /* 小さい画面では折り返す */
+    justify-content: center; /* よこ方向の中央ぞろえ */
+    gap: 40px; /
+}
+
+/* h1の文字の大きさと上下の余白を設定 */
+h1 {
+    width: 100%; 
+    font-size: 32px; 
+    margin: 30px ;
+}
+.item {
+    text-decoration: none; 
+    color: black; 
+    width: 700px; 
+    
+    /* 囲み線 */
+    border: 1px solid lightgray; 
+    border-radius: 10px; /* 角をまるく */
+    
+    padding: 10px; /* 中の隙間 */
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.1); /* うっすらとした影 */
+
+}
+
+
+/* 画像のサイズを調節します */
+img {
+    width: 100%; 
+    height: auto; 
+    border-radius: 8px; /* 角を丸く */
+}
+

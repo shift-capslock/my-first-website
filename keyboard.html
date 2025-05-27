@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KeyboardSettings</title>
+    <link rel="stylesheet" href="key_CSS.css">
+</head>
+<header>
+    <h1>目次</h1>
+    <ul>
+        <li><a href="#motivation">動機</a></li>
+        <li><a href="#layout-change">キーボードの配置を変更するということ</a></li>
+        <li><a href="#non-typist">タッチタイピングできない人向け</a></li>
+        <li><a href="#typist">タッチタイピングできる人向け</a></li>
+        <li><a href="#shortcut">ショートカットを登録</a></li>
+        <li><a href="#try">実際にやってみよう</a></li>
+    </ul>
+</header>
+<body>
+    <h1 id="motivation">動機について</h1>
+    <p>
+        キーボードをカスタムしたいな、と思っていたのですが、キーマップをカスタムできるようなキーボードって高いので敬遠してました。
+        <br>
+        でも、ありました。(比較すれば)安くて、結構カスタマイズできるキーボードを。
+    </p>
+<a href="https://superkopek.jp/products/keychron-b1pro?srsltid=AfmBOor0AwNNEThM_u9BpqGTQMZL-YIO60B7RXnkPuugexHX2wtylS8A">正規代理店</a>
+<br>
+<a href="https://www.amazon.co.jp/stores/Keychron/page/2174EBBC-DC8D-41D1-815A-11FA37224866">amazon</a>
+<p>
+    ええ、わかります。一体キーボードをカスタムする意味とは？という疑問が頭に浮かぶことでしょう。
+    そもそも現在タッチタイピング(旧ブラインドタッチ)ができる人にとっては、今更配置を変えたら、今まで覚えたものがパーじゃないかと。
+    そういう人は<a href="#typist">こちら</a>から
+</p>
+
+    <h1 id="layout-change">キーボードの配置を変更するということ</h1>
+<p>
+
+    キーボードっておもに2つの手段でカスタムすることができます。
+    <br>
+    １つ目はキーボードのボタンの位置を変えるという方法です。<br>
+        <img src="key_斜めキーボード.jpg" alt="photo" class="keyboard"><br>
+        <!--
+        販売商品ではない制作物の一部に装飾・背景・イメージ画像として使用する場合は無料でご利用いただけます。
+        https://www.ac-illust.com/
+        -->
+    皆さんのキーボードはボタンが斜めに配置されていますが、別に必ずそうである必要はありません。
+    <ul>
+        <li>方眼紙のように正方形</li>
+        <li>指の長さに合わせて縦の列にずらす</li>
+        <li>キーボードを中央で切断</li>
+
+    </ul>
+    
+    または、キーボードの物理的配置を変えずにキーボードのアルファベットの位置を変えるという手もあります。
+    例えばcaps lockという意味のわからないキーをCtrlに変えたりというふうな使い方ができます。
+
+    
+</p>
+
+    <h1 id="non-typist">タッチタイピングできない人向け</h1>
+<p>
+    キーボードの配置を変えられるので、もちろん覚えやすいように配置することもできます。
+    例えば母音aiueoを固めておいたり、普通の音と濁音（半濁音）を上下に並べておいたりすれば、<br>
+    <img src="key_濁音をそばに.png" alt="photo" class="keyboard"><br>
+    （引用　大西拓磨　https://o24.works/layout/　より）
+    <br><br>
+    まだ覚えてない人or覚えられない人にはその凄さがわかると思います。
+
+</p>
+
+    <h1 id="typist">タッチタイピングできる人向け</h1>
+<p>
+    
+お待たせしました。タッチタイピングをマスターしている人への利点を説明します。
+別に既に覚えたアルファベットのキーを変更する必要はありません。
+<br>
+むしろキーマップを改善することで、重要なのに離れた位置にいる
+<ul>
+    <strong><li>”ー”長音記号</li>
+    <li>Enter</li>
+    <li>Back Space</li>
+    <li>()</li></strong>
+    <li>tab</li>
+    <li>矢印キー</li>
+    <li>=</li>
+    <li>"</li>
+    <li>[]{}</li>
+</ul>
+
+たちを中央に持ってこれます。
+特に<strong>カタカナ用語</strong>が多い私達にとって長音記号が近くにあるのはとても効率的です。
+また、
+<strong>プログラミングでよく使うキー</strong>も登録しておくと楽になるかもしれません。
+特に()[]=""などはよく使うくせにキーが遠いですが、近くに寄せることができます。
+<br>
+PCでゲームをする人にとっては、WASDを矢印キーとして使うことができたらどれほど便利か想像できるのではないでしょうか？
+
+
+
+
+<button onclick="highlightSymbols()">記号を黄色にする</button><br>
+
+
+
+<textarea id="sdd" rows="10" cols="33"></textarea>
+
+
+<pre id="plus" class="code"></pre>
+
+
+<script>
+  // テキストエリアと表示する場所をそれぞれ変数に入れます
+  const textarea = document.getElementById('sdd');   // 入力欄
+  const pre = document.getElementById('plus');       // 表示欄
+
+  // 入力欄に文字が入力されたら、表示欄に同じ内容を表示するようにします
+  textarea.addEventListener('input', function () {
+    pre.textContent = textarea.value;  // 入力された内容をそのまま表示
+  });
+</script>
+
+
+
+<pre id="code" class="code">
+#include &lt;stdio.h&gt;
+#include &lt;stdlib.h&gt;
+#include &lt;time.h&gt;
+
+int main() {
+    int answer;
+    int guess;
+    int attempts = 0;
+    int maxAttempts = 10;
+    srand((unsigned int)time(NULL));
+    answer = rand() % 100 + 1;
+    while (1) {
+        printf("Enter your guess (1-100): ");
+        if (scanf("%d", &guess) != 1) {
+            while (getchar() != '\n');
+            continue;
+        }
+        attempts++;
+        if (guess < 1 || guess > 100) {
+            printf("Out of range.\n");
+            continue;
+        }
+        if (guess < answer) {
+            printf("Too low.\n");
+        } else if (guess > answer) {
+            printf("Too high.\n");
+        } else {
+            printf("Correct! You guessed it in %d attempts.\n", attempts);
+            break;
+        }
+        if (attempts >= maxAttempts) {
+            printf("Too many attempts. The answer was %d.\n", answer);
+            break;
+        }
+    }
+    printf("Game over.\n");
+    return 0;
+}
+</pre>
+
+
+
+</p>
+    
+
+    <h1 id="shortcut">ショートカットを登録</h1>
+<p>
+    他にも様々なショートカットを登録することもできます。<br>
+<s>覚えさせる気があるのかわからないようなショートカットやよく使うくせに無駄に複雑な</s>
+ショートカットを即座に打つことができるようになります。
+<br><br>
+例えば、「タブを左右に移動」はCtrl+Tab (+Shift)ですが、最大3つも同時押しさせるとかナンセンスですし、
+そもそも左側に集中しすぎていて左手をホームポジションから移動させる必要があります。
+</p>
+<p>
+でもキーを再配置したり、階層建てにすることで、スムーズにタブを切り替えることができます。
+少なくともわざわざマウスに手を伸ばさなくても良くなります。
+</p>
+なにより、
+<p id = "inyou">
+「これ便利やん！」ってその時覚えてて、いざ使うとき忘れてるもんなんや・・・
+</p>
+ということを防げます。<br>
+だって、適当なキーに割り振っておけば私の代わりにキーボードが覚えていてくれますから。
+
+
+    <h1 id="try">実際にやってみよう</h1>
+キーマップを変更する方法は以下のとおりです。
+<ul>
+    <li><strong>リマップ対応製品を買う</strong></li>
+
+    <li>Microsoft公式アプリ<strong>PowerToys</strong></li>
+    <li><strong>AutoHotKey</strong></li>
+</ul>
+
+<h2>リマップ対応製品を買う</h2>
+<ul>
+    <li>PC本体を弄る必要がないので、セキュリティーリスクはゼロ。</li>
+    <li>キーボードは他のPCでも利用可能。</li>
+    <li>有料</li>
+</ul>
+<img src="key_Amazonlink.png" alt="QRコード" id="QR">
+
+
+<h2>PowerToys</h2>
+<p>
+    <ul>
+        <li>キーの入れかえ可能</li>
+        <li>Microsoft公式アプリ</li>
+    </ul>
+</p>
+<h2>
+     AutoHotKey
+</h2>
+<p>
+    <ul>
+        <li>キーの入れ替え</li>
+        <li>キーボードの階層建て</li>
+        （つまり、数字キーとShiftを押すと別の文字が入力されますが、
+        同じように、貴方が設定したTGキーと同時に押すと別の文字を入力できるように変更可能です）
+        <br>よく使うが遠くにあるキーやショートカットを中央に寄せたりできます。
+
+    </ul>
+</p>
+
+
+
+
+
+
+<footer>
+    QRコードはデンソーウェーブ株式会社の登録商標です。
+</footer>
+</body>
+
+
+  <script src="keyboard_js.js"></script>
+
+
+</html>
