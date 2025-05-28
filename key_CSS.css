@@ -8,6 +8,40 @@ body {
 
 
 
+/* 表全体の見た目（テーブル全体の装飾） */
+table {
+  border-collapse: collapse; /* セルの境界を一つにまとめる */
+  width: 100%; /* 横幅を親要素に合わせる */
+  margin: 10px 0; /* 上下の余白をとる */
+  font-family: sans-serif; 
+}
+
+/* ヘッダーセルのスタイル */
+th {
+  background-color: #f2f2f2; /* 薄い灰色＝見出しを目立たせる */
+  text-align: left; /* 左揃え */
+  padding: 8px; /* 内側の余白 */
+  border: 1px solid #ddd; /* 細い枠線 */
+}
+
+/* 通常のセルのスタイル */
+td {
+  padding: 8px; /* 内側の余白 */
+  border: 1px solid #ddd; /* 枠線 */
+}
+
+/* 偶数行の背景色（読みやすくするための縞模様） */
+tr:nth-child(even) {
+  background-color: #fcfcfc; /* わずかに薄い背景色 */
+}
+
+
+
+
+
+
+
+
 
 .highlight {
   color: yellow;
