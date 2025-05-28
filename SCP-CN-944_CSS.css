@@ -11,7 +11,7 @@ body {
 .container {
   background: white;
   padding: 2rem;
-  padding-top: 3rem; /* 明示的に上だけ余白を大きめに取る */
+  padding-top: 3rem; 
   border-radius: 10px;
   max-width: 700px;
   box-shadow: 0 0 10px rgba(0,0,0,0.2);
@@ -58,7 +58,7 @@ header, footer {
 .scary-eye {
   width: 100%;        /* 横幅を親要素にフィットさせる */
   height: auto;       /* 縦横比を保つ */
-  margin-top: 1rem;   /* 上に少し余白 */
-  max-width: 100%;    /* はみ出し防止（念のため） */
-  border-radius: 8px; /* オプション：角を少し丸める */
+  margin-top: 1rem;   
+  max-width: 100%;    
+  border-radius: 8px; 
 }

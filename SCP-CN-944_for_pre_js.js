@@ -30,7 +30,7 @@ function replaceOneFiveCharBlockWithMessage() {
 
 // 実行制御：Enterキーで開始
 let intervalId = null;
-let intervalTime = 800; // 初期速度（ミリ秒）
+let intervalTime = 800; // 初期速度
 const accelerationRate = 0.8; // 加速度係数（1より小さくすると加速）
 
 function startAcceleratingInterval() {
@@ -40,7 +40,7 @@ function startAcceleratingInterval() {
     replaceOneFiveCharBlockWithMessage();
 
     intervalTime *= accelerationRate;
-    if (intervalTime < 5) intervalTime = 5; // 最低間隔を設定（過剰な高速化防止）
+    if (intervalTime < 5) intervalTime = 5; // 最低間隔を設定
 
     intervalId = setTimeout(run, intervalTime);
   }
